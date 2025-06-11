@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .full-screen-center {
+    @apply w-screen h-screen flex flex-col items-center justify-center;
+  }
+}
