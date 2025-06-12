@@ -2,6 +2,8 @@
 
 import React from 'react'
 import { Link } from '@heroui/react'
+import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
 
 type AboutProps = {
   title?: string
@@ -9,20 +11,15 @@ type AboutProps = {
 }
 
 const About: React.FC<AboutProps> = () => {
+  const t = useTranslations('About')
+
   return (
     <main>
       <div className="container mt-14 inline-flex flex-col pb-10">
-        <h1 className="text-2xl">Why the change?</h1>
-
+        <h1 className="text-2xl">{t('title')}</h1>
+        <p className="mt-4">{t('intro')}</p>
         <p className="mt-4">
-          When we started NextUI, our mission was to create not only the most beautiful UI library
-          but also one that fully supported all the latest Next.js features. The name "NextUI"
-          aligned perfectly with this initial vision. We played a significant role in enriching the
-          Next.js ecosystem, giving developers more options and high-quality components to build
-          their applications with Next.js and its latest features, including Server Components.
-        </p>
-        <p className="mt-4">
-          This journey led us to create
+          {t('journey.0')}
           <Link
             color="foreground"
             href="https://www.tailwind-variants.org/"
@@ -31,7 +28,7 @@ const About: React.FC<AboutProps> = () => {
           >
             tailwind-variants
           </Link>
-          and migrate our entire
+          {t('journey.1')}
           <Link
             color="foreground"
             href="https://v1.nextui.org/"
@@ -40,13 +37,10 @@ const About: React.FC<AboutProps> = () => {
           >
             v1 codebase
           </Link>
-          to Tailwind CSS , always pursuing our vision of being the best UI library for Next.js.
+          {t('journey.2')}
         </p>
         <p className="mt-4">
-          However, as we grew, we realized our core mission had expanded: we want to help not just
-          Next.js developers, but the entire React ecosystem build fast and beautiful applications,
-          regardless of their design experience. We've since added support for other React
-          frameworks like
+          {t('support.0')}
           <Link
             color="foreground"
             href="https://astro.build/"
@@ -73,7 +67,7 @@ const About: React.FC<AboutProps> = () => {
           >
             Vite
           </Link>
-          , and
+          , {t('support.1')}
           <Link
             color="foreground"
             href="https://laravel.com/"
@@ -82,7 +76,7 @@ const About: React.FC<AboutProps> = () => {
           >
             Laravel
           </Link>
-          . Looking ahead, we aim to expand beyond web development into other ecosystems like
+          . {t('support.2')}
           <Link
             color="foreground"
             href="https://reactnative.dev/"
@@ -93,10 +87,7 @@ const About: React.FC<AboutProps> = () => {
           </Link>
           .
         </p>
-        <p className="mt-4">
-          Additionally, we want to avoid any confusion about our library being created or maintained
-          by the Next.js team. HeroUI better reflects our independent identity and broader mission.
-        </p>
+        <p className="mt-4">{t('identity')}</p>
       </div>
     </main>
   )

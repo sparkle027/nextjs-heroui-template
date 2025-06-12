@@ -7,5 +7,20 @@
   "Tabs": {
     "home": "Home",
     "about": "About Us"
+  },
+  "About": {
+    "title": "Why the change?",
+    "intro": "When we started NextUI, our mission was to create not only the most beautiful UI library but also one that fully supported all the latest Next.js features. The name 'NextUI' aligned perfectly with this initial vision. We played a significant role in enriching the Next.js ecosystem, giving developers more options and high-quality components to build their applications with Next.js and its latest features, including Server Components.",
+    "journey": [
+      "This journey led us to create ",
+      " and migrate our entire ",
+      " to Tailwind CSS, always pursuing our vision of being the best UI library for Next.js."
+    ],
+    "support": [
+      "However, as we grew, we realized our core mission had expanded: we want to help not just Next.js developers, but the entire React ecosystem build fast and beautiful applications, regardless of their design experience. We've since added support for other React frameworks like ",
+      ", ",
+      ". Looking ahead, we aim to expand beyond web development into other ecosystems like "
+    ],
+    "identity": "Additionally, we want to avoid any confusion about our library being created or maintained by the Next.js team. HeroUI better reflects our independent identity and broader mission."
   }
 }

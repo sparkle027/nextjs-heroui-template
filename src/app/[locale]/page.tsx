@@ -2,7 +2,6 @@
 
 import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from '@heroui/react'
 import { useTranslations } from 'next-intl'
-// import { Link } from '@/i18n/navigation'
 
 export default function HomePage() {
   const t = useTranslations('Landing')
