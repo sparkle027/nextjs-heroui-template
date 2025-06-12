@@ -6,4 +6,7 @@ export const routing = defineRouting({
 
   // Used when no locale matches
   defaultLocale: 'zh',
+
+  // 让默认语言（zh）不带前缀
+  localePrefix: 'as-needed',
 })

@@ -8,7 +8,7 @@ export default function HomePage() {
   const t = useTranslations('Landing')
 
   return (
-    <div className="full-screen-center">
+    <div className="flex flex-1 h-full w-full items-center justify-center">
       <Card className="w-[400px]">
         <CardHeader className="flex gap-3">
           <Image
